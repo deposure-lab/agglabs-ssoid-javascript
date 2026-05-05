@@ -1,0 +1,33 @@
+{
+  "name": "agg-labs-sso-sdk",
+  "version": "1.0.2",
+  "description": "Officail AGG Labs SSO SDK for JavaScript/TypeScript",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deposure-lab/agglabs-ssoid-javascript.git"
+  },
+  "bugs": {
+    "url": "https://github.com/deposure-lab/agglabs-ssoid-javascript/issues"
+  },
+  "homepage": "https://github.com/deposure-lab/agglabs-ssoid-javascript#readme",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "sso",
+    "agglabs",
+    "oauth",
+    "pkce"
+  ],
+  "author": "Maciej Pukszta / AGG Labs",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
