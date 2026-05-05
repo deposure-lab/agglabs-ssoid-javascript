@@ -31,14 +31,15 @@ npm install agg-labs-sso-sdk
 
 ### 1. Initialize the Client
 
-You only need your clientId and redirectUri.
+Initialize the client with your credentials. For server-side applications, providing a clientSecret is highly recommended for enhanced security.
 The issuerUrl is pre-configured to point to AGG Labs infrastructure.
 
 import { AggClient } from 'agg-labs-sso-sdk';
 
 const auth = new AggClient({
-clientId: 'your-service-provider-id',
-redirectUri: 'https://your-app.com/api/auth/callback',
+  clientId: 'your-service-provider-id',
+  clientSecret: 'your-service-provider-secret', // Added for secure exchange
+  redirectUri: 'https://your-app.com/api/auth/callback',
 });
 
 ---
